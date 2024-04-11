@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 20px;
+  width: 300px;
+}
+
+.add {
+  width: 100px;
+  align-self: center;
+}

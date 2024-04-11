@@ -1,0 +1,31 @@
+.card {
+  border-radius: 5px;
+  border: 1px solid grey;
+  background-color: #404040;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.category {
+  width: 5px;
+}
+
+.name {
+  /* padding-left: 10px; */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cost {
+  font-size: 24px;
+  text-align: right;
+  align-self: center;
+  padding-right: 10px;
+}
+
+.card > div:nth-child(2) {
+  padding: 5px;
+  flex-grow: 1;
+  text-align: left;
+}

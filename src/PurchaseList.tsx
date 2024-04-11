@@ -1,6 +1,8 @@
 import PurchaseCard from './PurchaseCard.tsx'
+import { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from './hooks.ts'
 import { add, selectPurchaseList } from './purchasesSlice.ts'
+import './PurchaseList.css'
 
 function PurchaseList() {
   const dispatch = useAppDispatch()
@@ -8,12 +10,18 @@ function PurchaseList() {
 
   const purcaseCards = purchaseList.map(purchase => <PurchaseCard purchase={purchase}/>)
 
-  const addPurchase = () => dispatch(add({name: "bipki", cost: 100}))
+  useEffect(() => {
+    console.log('asdf')
+    let cat1 = {name: 'Еда', color: 'green'}
+    dispatch(add({name: 'Яблоко', cost: 30, date: new Date(), category: cat1}))
+    dispatch(add({name: 'Яблоко', cost: 30, date: new Date(), category: cat1}))
+  }, [])
+  const addPurchase = () => {}
 
-  return <>
+  return <div className='list'>
     {purcaseCards}
-    <button onClick={addPurchase}>add</button>
-  </>
+    <button onClick={addPurchase} className='add'>add</button>
+  </div>
 }
 
 export default PurchaseList
