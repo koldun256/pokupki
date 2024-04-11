@@ -1,11 +1,14 @@
-import { useState } from 'react'
 import PurchaseCard from './PurchaseCard.tsx'
+import { useAppDispatch, useAppSelector } from './hooks.ts'
+import { add, selectPurchaseList } from './purchasesSlice.ts'
 
 function PurchaseList() {
-  const [purchases, setPurchases] = useState<string[]>([])
-  const purcaseCards = purchases.map(todo => <PurchaseCard name={todo}/>)
+  const dispatch = useAppDispatch()
+  const purchaseList = useAppSelector(selectPurchaseList)
 
-  const addPurchase = () => setPurchases([...purchases, 'asdf'])
+  const purcaseCards = purchaseList.map(purchase => <PurchaseCard purchase={purchase}/>)
+
+  const addPurchase = () => dispatch(add({name: "bipki", cost: 100}))
 
   return <>
     {purcaseCards}

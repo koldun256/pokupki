@@ -1,7 +1,8 @@
-type Props = { name: string }
+import { Purchase } from './purchasesSlice'
+type Props = { purchase: Purchase }
 
-function PurchaseCard({ name }: Props) {
-  return <div>{name}</div>
+function PurchaseCard({ purchase }: Props) {
+  return <div>{purchase.name}</div>
 }
 
 export default PurchaseCard
