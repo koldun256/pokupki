@@ -1,7 +1,7 @@
 .card {
   border-radius: 5px;
   border: 1px solid grey;
-  background-color: #404040;
+  background-color: #343f44;
   display: flex;
   gap: 10px;
   overflow: hidden;
@@ -12,7 +12,6 @@
 }
 
 .name {
-  /* padding-left: 10px; */
   font-size: 20px;
   font-weight: bold;
 }

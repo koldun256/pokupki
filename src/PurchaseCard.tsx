@@ -1,16 +1,16 @@
 import { Purchase } from './purchasesSlice'
-import './PurchaseCard.css'
+import classes from './PurchaseCard.module.css'
 
 type Props = { purchase: Purchase }
 
 function PurchaseCard({ purchase }: Props) {
-  return <div className='card'>
-    <div className='category' style={{backgroundColor: purchase.category.color}}></div>
+  return <div className={classes.card}>
+    <div className={classes.category} style={{backgroundColor: purchase.category.color}}></div>
     <div>
-      <div className='name'>{purchase.name}</div>
-      <div className='date'>{purchase.date.getFullYear()}</div>
+      <div className={classes.name}>{purchase.name}</div>
+      <div className={classes.date}>{purchase.date.toDateString()}</div>
     </div>
-    <div className='cost'>{purchase.cost}</div>
+    <div className={classes.cost}>{purchase.cost}</div>
   </div>
 }
 

@@ -1,12 +1,12 @@
 import PurchaseList from './PurchaseList'
-import './App.css'
+import PurchaseAddForm from './PurchaseAddForm'
+import classes from './App.module.css'
 
 function App() {
-  return (
-    <>
-      <PurchaseList />
-    </>
-  )
+  return <div className={classes.app}>
+    <PurchaseList />
+    <PurchaseAddForm />
+  </div>
 }
 
 export default App
