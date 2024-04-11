@@ -12,6 +12,23 @@
   gap: 10px;
 }
 
+.categoryButton.selected {
+  background-color: var(--color);
+  color: #2d353b;
+}
+
+.categoryButton {
+  border: 1px solid var(--color);
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: var(--color);
+}
+
+.categorySelector {
+  display: flex;
+  gap: 5px;
+}
+
 .name {
   width: 10em;
 }
