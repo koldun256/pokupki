@@ -1,0 +1,30 @@
+.category-list {
+  display: flex;
+  width: 20em;
+  border: 1px solid grey;
+  border-radius: 5px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.category-list .header {
+  background-color: #343f44;
+  padding-left: 10px;
+  color: #d3c6aa;
+  font-size: 1.5em;
+}
+
+.category-list .purchases {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category-list .footer {
+  background-color: #343f44;
+  text-align: right;
+  font-size: 1.5em;
+  padding-right: 10px;
+  color: #d3c6aa;
+}

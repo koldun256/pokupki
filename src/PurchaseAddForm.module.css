@@ -1,4 +1,4 @@
-.addForm {
+.add-form {
   background-color: #343F44;
   padding: 10px;
   display: flex;
@@ -12,21 +12,21 @@
   gap: 10px;
 }
 
-.categoryButton.selected {
+.category-button.selected {
   background-color: var(--color);
   color: #2d353b;
 }
 
-.categoryButton {
+.category-button {
   border: 1px solid var(--color);
   border-radius: 3px;
   padding: 5px 10px;
   color: var(--color);
 }
 
-.categorySelector {
+.category-selector {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
 .name {
@@ -37,7 +37,7 @@
   width: 4em;
 }
 
-.addForm input {
+.add-form input {
   border-radius: 5px;
   border: 1px solid grey;
   font-size: 20px;
@@ -45,7 +45,7 @@
   background-color: #232A2E;
 }
 
-.addForm input:focus {
+.add-form input:focus {
   border: 1px solid #83c092;
   outline: none;
 }

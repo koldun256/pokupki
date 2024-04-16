@@ -21,6 +21,7 @@ function CategoryButton({ category, selected, onSelect }: ButtonProps) {
 }
 
 function PurchaseAddForm() {
+  console.log(classes)
   const dispatch = useAppDispatch()
 
   const [name, setName] = useState<string>('')

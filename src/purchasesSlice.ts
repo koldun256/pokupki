@@ -56,6 +56,9 @@ export const selectNextPurchaseId = (state: RootState) => {
   const last = list[list.length - 1]
   return last.id + 1
 }
-
+export const selectCategoryPurchases = (category: Category) => (state: RootState) => 
+  selectPurchaseList(state).filter(purchase => purchase.category == category)
+export const selectCategoryCost = (category: Category) => (state: RootState) =>
+  selectCategoryPurchases(category)(state).reduce((acc, purchase) => acc + purchase.cost, 0)
 
 export default purchasesSlice.reducer
