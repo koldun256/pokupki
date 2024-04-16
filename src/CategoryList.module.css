@@ -5,6 +5,7 @@
   border-radius: 5px;
   flex-direction: column;
   overflow: hidden;
+  align-items: stretch;
 }
 
 .category-list .header {

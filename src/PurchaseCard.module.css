@@ -1,6 +1,6 @@
 .card {
   border-radius: 5px;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
   background-color: #343f44;
   display: flex;
   gap: 10px;
