@@ -6,3 +6,12 @@
   padding: 10px;
   gap: 10px;
 }
+
+.scroll::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.scroll {
+  overflow-y: auto;
+  scrollbar-width: none;
+}

@@ -5,6 +5,7 @@
   display: flex;
   gap: 10px;
   overflow: hidden;
+  min-height: min-content;
 }
 
 .category {

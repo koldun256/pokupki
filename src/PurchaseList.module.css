@@ -1,9 +1,12 @@
 .list {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: stretch;
   gap: 10px;
+  min-height: min-content;
+  overflow-y: hidden;
+  flex-shrink: 0;
 }
 
 .add {
