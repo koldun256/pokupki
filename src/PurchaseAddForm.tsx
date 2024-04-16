@@ -57,7 +57,7 @@ function PurchaseAddForm() {
       <input className={classes.cost} value={cost} onChange={e => /^\d*$/.test(e.target.value) && setCost(e.target.value)} />
     </div>
     <div className={classes.categorySelector}>{categoryButtons}</div>
-    <button className={classes.add} onClick={submit}>Add</button>
+    <button className={classes.submit} onClick={submit}>Add</button>
   </div>
 }
 

@@ -10,10 +10,12 @@
   margin: 0px -10px;
   padding: 0px 10px;
 }
+
 .placeholder {
   padding: 10px;
   text-align: center;
-  border: 3px grey dashed;
+  border: 3px var(--gray0) dashed;
+  border-radius: 5px;
 }
 
 .add {

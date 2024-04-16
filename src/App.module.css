@@ -6,6 +6,8 @@
   width: 100vw;
   height: 100vh;
   flex-direction: row;
+  background-color: var(--bg-dim);
+  color: var(--fg);
 }
 
 .app .categories {
@@ -13,4 +15,9 @@
   flex-flow: column wrap;
   gap: 30px;
   padding: 20px;
+}
+
+button {
+  box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--bg2);
 }

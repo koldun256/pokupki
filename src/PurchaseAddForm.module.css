@@ -1,5 +1,5 @@
 .add-form {
-  background-color: #343F44;
+  background-color: var(--bg1);
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@
 
 .category-button.selected {
   background-color: var(--color);
-  color: #2d353b;
+  color: var(--bg0);
 }
 
 .category-button {
@@ -40,13 +40,26 @@
 
 .add-form input {
   border-radius: 5px;
-  border: 1px solid grey;
+  border: 1px solid var(--gray0);
   font-size: 20px;
   padding: 5px;
-  background-color: #232A2E;
+  background-color: var(--bg-dim);
+  color: var(--fg);
 }
 
 .add-form input:focus {
-  border: 1px solid #83c092;
+  border: 1px solid var(--aqua);
   outline: none;
+}
+
+.submit {
+  padding: 5px;
+  border: none;
+  color: var(--fg);
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.submit:focus {
+  border: none;
 }

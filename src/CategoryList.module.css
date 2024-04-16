@@ -5,13 +5,13 @@
   flex-direction: column;
   overflow: hidden;
   align-items: stretch;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header {
   z-index: 1;
-  background-color: #343f44;
+  background-color: var(--bg1);
   padding-left: 10px;
-  color: #d3c6aa;
   font-size: 1.5em;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -21,7 +21,7 @@
   overflow-x: hidden;
   padding: 20px;
   scrollbar-width: none;
-  background-color: #2d353b;
+  background-color: var(--bg0);
 }
 
 .scroll::-webkit-scrollbar { 
@@ -29,11 +29,10 @@
 }
 
 .footer {
-  background-color: #343f44;
+  background-color: var(--bg1);
   text-align: right;
   font-size: 1.5em;
   padding-right: 10px;
-  color: #d3c6aa;
   z-index: 1;
   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
 }
