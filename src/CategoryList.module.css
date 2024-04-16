@@ -28,3 +28,9 @@
   padding-right: 10px;
   color: #d3c6aa;
 }
+
+.category-list .placeholder {
+  padding: 10px;
+  text-align: center;
+  border: 3px grey dashed;
+}

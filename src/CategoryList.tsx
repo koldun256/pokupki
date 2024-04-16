@@ -10,13 +10,16 @@ function CategoryList(props: Props) {
   const cost = useAppSelector(selectCategoryCost(props.category))
   const purchases = useAppSelector(selectCategoryPurchases(props.category))
   
-  const purchaseElements = purchases.map(purchase => <PurchaseCard purchase={purchase} key={purchase.id} />)
+  let purchaseElements = purchases.map(purchase => <PurchaseCard purchase={purchase} key={purchase.id} />)
+  if(purchaseElements.length == 0) {
+    purchaseElements = [<div className={classes.placeholder}>Тут ничего нету</div>]
+  }
   const style = {'--color': props.category.color} as CSSProperties
 
   return <div className={classes.categoryList} style={style}>
     <div className={classes.header}>{props.category.name}</div>
     <div className={classes.purchases}>{purchaseElements}</div>
-    <div className={classes.footer}>{cost}</div>
+    <div className={classes.footer}>{cost} ₽</div>
   </div>
 }
 
