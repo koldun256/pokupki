@@ -9,8 +9,10 @@ function App() {
 
   return <div className={classes.app}>
     <Sidebar />
-    <CategoryList category={categories[0]} />
-    <CategoryList category={categories[1]} />
+    <div className={classes.categories}>
+      <CategoryList category={categories[0]} />
+      <CategoryList category={categories[1]} />
+    </div>
   </div>
 }
 

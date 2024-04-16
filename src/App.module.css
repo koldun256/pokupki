@@ -7,3 +7,10 @@
   height: 100vh;
   flex-direction: row;
 }
+
+.app .categories {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+  padding: 20px;
+}
