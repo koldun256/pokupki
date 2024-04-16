@@ -3,13 +3,16 @@ import Sidebar from './Sidebar'
 import { useAppSelector } from './hooks'
 import classes from './App.module.css'
 import { selectCategories } from './purchasesSlice'
-import {default as theme} from './light.module.css'
+import themes from './colors.module.css'
+import { selectTheme } from './themeSlice'
+import ThemeSwitcher from './ThemeSwitcher'
 
 function App() {
   const categories = useAppSelector(selectCategories)
-  console.log(theme)
+  const theme = useAppSelector(selectTheme)
 
-  return <div className={classes.app + ' ' + theme.light}>
+  return <div className={`${classes.app} ${themes[theme]}`}>
+    <ThemeSwitcher />
     <Sidebar />
     <div className={classes.categories}>
       <CategoryList category={categories[0]} />

@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import purchasesReducer from './purchasesSlice.ts'
+import themeReducer from './themeSlice.ts'
 
 const store = configureStore({
   reducer: {
-    purchases: purchasesReducer
+    purchases: purchasesReducer,
+    theme: themeReducer,
   }
 })
 
