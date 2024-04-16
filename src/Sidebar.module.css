@@ -1,17 +1,23 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid grey;
   align-items: stretch;
   padding: 10px;
   gap: 10px;
+  background-color: #2d353b;
 }
 
 .scroll::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+  display: none;
 }
 
 .scroll {
   overflow-y: auto;
   scrollbar-width: none;
+  
+  margin: -10px;
+  padding: 10px;
+
+  margin-top: 0;
+  margin-bottom: 0;
 }

@@ -1,11 +1,11 @@
 .card {
   border-radius: 5px;
-  /* border: 1px solid grey; */
   background-color: #343f44;
   display: flex;
   gap: 10px;
   overflow: hidden;
   min-height: min-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .category {

@@ -1,16 +1,17 @@
 import PurchaseCard from './PurchaseCard.tsx'
-import { useAppSelector } from './hooks.ts'
-import { selectPurchaseList } from './purchasesSlice.ts'
 import classes from './PurchaseList.module.css'
+import { Purchase } from './purchasesSlice.ts'
 
-function PurchaseList() {
-  const purchaseList = useAppSelector(selectPurchaseList)
+type Props = {
+  purchases: Purchase[]
+}
 
-  const purchaseCards = purchaseList.map(purchase => <PurchaseCard purchase={purchase}/>)
-  
-  return <div className={classes.list}>
-    {purchaseCards}
-  </div>
+function PurchaseList(props: Props) {
+  const content = props.purchases.length == 0 ?
+    <div className={classes.placeholder}>Тут ничего нету</div> :
+    props.purchases.map(purchase => <PurchaseCard purchase={purchase}/>)
+
+  return <div className={classes.list}> {content} </div>
 }
 
 export default PurchaseList

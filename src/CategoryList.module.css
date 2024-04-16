@@ -1,37 +1,39 @@
 .category-list {
   display: flex;
   width: 20em;
-  border: 1px solid grey;
   border-radius: 5px;
   flex-direction: column;
   overflow: hidden;
   align-items: stretch;
 }
 
-.category-list .header {
+.header {
+  z-index: 1;
   background-color: #343f44;
   padding-left: 10px;
   color: #d3c6aa;
   font-size: 1.5em;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.category-list .purchases {
+.scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  scrollbar-width: none;
+  background-color: #2d353b;
 }
 
-.category-list .footer {
+.scroll::-webkit-scrollbar { 
+  display: none;
+}
+
+.footer {
   background-color: #343f44;
   text-align: right;
   font-size: 1.5em;
   padding-right: 10px;
   color: #d3c6aa;
-}
-
-.category-list .placeholder {
-  padding: 10px;
-  text-align: center;
-  border: 3px grey dashed;
+  z-index: 1;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
 }
